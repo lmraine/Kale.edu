@@ -241,7 +241,7 @@ header nav.main .main_nav_item {
 }
 
 .large {
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
@@ -260,6 +260,8 @@ header nav.main .main_nav_item {
 
     display: flex;
     flex-direction: column;
+    /* height: 100px;
+    width: 100px; */
 
 }
 
