@@ -204,7 +204,7 @@ header nav.main .main_nav_item {
 
 .items {
     display: grid;
-    grid-template-rows: .8fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .8fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr .5fr .5fr 1fr 1fr .5fr;
     padding-left: 10rem;
     padding-top: 2rem;
@@ -417,11 +417,40 @@ header nav.main .main_nav_item {
 
 .large-1 {
     /* justify-content: center; */
-    padding-left: 10rem;
-    padding-top: 8rem;
-    padding-right: 20px;
+    padding-left: 15rem;
+    padding-top: 10rem;
+    padding-right: 6rem;
     padding-bottom: 20px;
 }
+
+#g-3-title {
+    text-transform: uppercase;
+}
+.g-3 h2 {
+    font-size: 3rem;;    
+ }
+
+ .g-3 p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+ }
+
+ .g-3 .lg-btn {
+    font-family: 'Gill Sans','Gill Sans MT',Calibri,Arial,sans-serif;
+    border: 1px solid #ddd;
+    background-color: transparent;
+    color: white;
+    width: 200px;
+    height: 50px;
+    text-shadow: none;
+    text-align: center;
+    display: flex;
+
+ }
+
+ .g-3 .lgbtn span {
+
+ }
 
 .large-2 {
     /* justify-content: center; */
