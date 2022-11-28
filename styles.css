@@ -441,15 +441,21 @@ header nav.main .main_nav_item {
     background-color: transparent;
     color: white;
     width: 200px;
-    height: 50px;
     text-shadow: none;
     text-align: center;
-    display: flex;
+
+    display: block;
+    text-decoration: none;
+    padding:10px;
+    margin:1px;
+    text-transform: uppercase;
+    transition: all .3s ease-in;
 
  }
 
- .g-3 .lgbtn span {
-
+ .g-3 .lg-btn:hover {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
  }
 
 .large-2 {
