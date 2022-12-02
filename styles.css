@@ -1,3 +1,9 @@
+/*****TODO
+GRID IS CENTERED
+1320 MAX WIDTH
+TRY 2FR AND 1FR
+OVERFLOW***/
+
 *:root {
     --primary-color: #00356b;
     --secondary-color: #286dc0;
@@ -202,12 +208,16 @@ header nav.main .main_nav_item {
 
 .items {
     display: grid;
-    grid-template-rows: .8fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr .5fr .5fr 1fr 1fr .5fr;
-    padding-left: 10rem;
-    /* padding-top: 2rem; */
+    /*ORIGINAL .8 F AND 1 FR*/
+    grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr;
+    /* padding-top: 2rem;*/
     position: relative;
-    top: -100px;
+    top: -50px;
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .item {
@@ -351,27 +361,48 @@ header nav.main .main_nav_item {
     object-fit: cover;
     text-shadow: 2px 2px 4px #000000;
 }
+
+.item-text {
+    z-index: 1;
+}
+
+.overlay-5 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-color: #bd5319;
+    opacity: .6;
+}   
 .g-6 {
     grid-column: 1/4;
     grid-row: 4/6;
-    z-index:1;
     background-image: url("/images/kale-10-new.jpeg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    /* object-fit: cover; */
     text-shadow: 2px 2px 4px #000000;
 }
+/* .overlay-6{
+    grid-column: 1/4;
+    grid-row: 4/6;
+    background-color: var(red);
+    opacity:.6;
+   
+}  */
+
 .g-7 { 
     grid-column: 4/5;
     grid-row: 4/5;
     background-image: url("/images/kale-7-resize.jpeg");
-    /* background-repeat: no-repeat;*/
     background-position: center;
-    /* object-fit: cover; */
     background-size: cover;
     text-shadow: 2px 2px 4px #000000;
 }
+.overlay-7 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    background-color: #5F712d;
+    opacity: .6;
+}   
 .g-8 {
     grid-column: 5/6;
     grid-row: 4/5;
