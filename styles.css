@@ -1,8 +1,7 @@
 /*****TODO
-GRID IS CENTERED
 1320 MAX WIDTH
-TRY 2FR AND 1FR
-OVERFLOW***/
+TRY 2FR AND 1FR***/
+/* import FacebookIcon from @mui/icons-material/Facebook; */
 
 *:root {
     --primary-color: #00356b;
@@ -201,6 +200,8 @@ header nav.main .main_nav_item {
     font-weight: 100;;
 }
 
+/***GRID***/
+
 .items-container {
     background-color: var(--primary-color);
     width: 100%;
@@ -211,7 +212,6 @@ header nav.main .main_nav_item {
     /*ORIGINAL .8 F AND 1 FR*/
     grid-template-rows: .5fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 2fr 1fr 1fr 2fr 2fr 1fr;
-    /* padding-top: 2rem;*/
     position: relative;
     top: -50px;
     max-width: 1300px;
@@ -364,6 +364,7 @@ header nav.main .main_nav_item {
 
 .item-text {
     z-index: 1;
+    transition: all 0.2s ease-in;
 }
 
 .overlay-5 {
@@ -381,13 +382,13 @@ header nav.main .main_nav_item {
     background-size: cover;
     text-shadow: 2px 2px 4px #000000;
 }
-/* .overlay-6{
+.overlay-6{
     grid-column: 1/4;
     grid-row: 4/6;
-    background-color: var(red);
-    opacity:.6;
-   
-}  */
+    background-color: var(--dark-gray);
+    opacity: .6;
+    
+} 
 
 .g-7 { 
     grid-column: 4/5;
@@ -445,20 +446,15 @@ header nav.main .main_nav_item {
     text-transform: uppercase;
 }
 
-.item-text {
-    transition: all 0.2s ease-in;
-}
-
 .small:hover .item-text{
     transform: translateY(-10px);
 }
 
 .large-1 {
-    /* justify-content: center; */
     padding-left: 15rem;
-    padding-top: 10rem;
+    padding-top: 6rem;
     padding-right: 6rem;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 
 #g-3-title {
@@ -504,11 +500,10 @@ header nav.main .main_nav_item {
  }
 
 .large-2 {
-    /* justify-content: center; */
     padding-left: 2rem;
     padding-right: 6rem;
     padding-top: 2rem;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 
 .large-2 .lg-btn {
@@ -546,8 +541,13 @@ header nav.main .main_nav_item {
 .footer_nav_list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     gap: 2rem;
     margin-bottom: 2rem;
+}
+
+.footer-image img {
+    height:250px;
 }
 
 .group-1 {
