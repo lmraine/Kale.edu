@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header -->
@@ -339,7 +338,7 @@
         <div class="footer-cell">
           <!-- Footer Nav Section -->
           <div class="footer_nav_section">
-            <div class="region region-footer">
+            <div class="region c">
               <nav class="footer_nav help_nav" >
                 <h2 class="footer_nav_label help_nav_label" id="help_nav_label">
                   Helpful Links
@@ -387,6 +386,12 @@
               </nav>
 
             </div>
+            <div class="footer-image">
+              <i class="fa-brands fa-instagram"></i>
+              <p>Kale on Instagram</p>
+                  <!-- <img src="images/dan-nov1.jpg" alt=""> -->
+
+              </div>
           </div>
           <!-- END: Footer Nav Section -->
 
@@ -425,49 +430,54 @@
           <div class="social_properties">
             <div class="region region-footer-social">
                <!-- Legal -->
-          <small class="footer_legal block">
-            <span class="footer_legal_copy"
-              >Copyright © 2021 Kale University</span
-            >
-            <span class="dot">·</span>
-            <span class="footer_legal_rights">All Rights Reserved</span>
-            <span class="dot">·</span>
-            <a
-              class="footer_legal_contact"
-              href="/contact-us/contact-web-editor"
-              >Contact Web Editor</a
-            >
-          </small>
-          <!-- END: Legal -->
+               <div class="legal">
+                 <small class="footer_legal block">
+                   <span class="footer_legal_copy"
+                     >Copyright © 2021 Kale University</span
+                   >
+                   <span class="dot">·</span>
+                   <span class="footer_legal_rights">All Rights Reserved</span>
+                   <span class="dot">·</span>
+                   <a
+                     class="footer_legal_contact"
+                     href="/contact-us/contact-web-editor"
+                     >Contact Web Editor</a
+                   >
+                 </small>
+                 <!-- END: Legal -->
+               </div>
+               <div class="social">
+                 <!-- Social Nav -->
+                 <nav class="social_nav" aria-labelledby="social_nav_label">
+                   <!-- <h2 class="visually_hidden" id="social_nav_label">
+                     Social Links
+                   </h2> -->
+                   <div class="social_nav_list">
+                     <a class="social_nav_link facebook" href="https://www.facebook.com/YaleUniversity" target="_blank">
+                       <span class="social_nav_link_icon"><i class="fa-brands fa-square-facebook fa-md"></i></span>
+                       <!-- <span class="social_nav_link_text">Facebook</span> -->
+                     </a>
+                       <a class="social_nav_link twitter" href="http://www.twitter.com/yale" target="_blank">
+                         <span class="social_nav_link_icon"><i class="fa-brands fa-square-twitter fa-md"></i></span>
+                         <!-- <span class="social_nav_link_text">Twitter</span></a> -->
+                       <a class="social_nav_link youtube" href="http://www.youtube.com/yale" target="_blank">
+                         <span class="social_nav_link_icon"><i class="fa-brands fa-youtube fa-md"></i></span>
+                         <!-- <span class="social_nav_link_text">YouTube</span></a> -->
+                       <a class="social_nav_link weibo" href="http://weibo.com/yaleuniversity" target="_blank">
+                         <span class="social_nav_link_icon"><i class="fa-brands fa-weibo fa-md"></i></span>
+                         <!-- <span class="social_nav_link_text">Sina Weibo</span></a> -->
+                   </div>
+                 </nav>
+                 <!-- END: Social Nav -->
+                 <div class="ASM">
+                   <a class="social_all_link button_text button_icon_right_arrow" href="/social-media" id="ASM">All Social Media</a>
+                   <i class="fa-solid fa-caret-right"></i>
+                 </div>
+               </div>
+             </div>
+             <!-- END: Social Properties -->
+               </div>
               
-              <!-- Social Nav -->
-              <nav class="social_nav" aria-labelledby="social_nav_label">
-                <!-- <h2 class="visually_hidden" id="social_nav_label">
-                  Social Links
-                </h2> -->
-                <div class="social_nav_list">
-                  <a class="social_nav_link facebook"
-                    href="https://www.facebook.com/YaleUniversity"
-                    target="_blank">
-                    <span class="social_nav_link_icon"><i class="fa-brands fa-square-facebook"></i></span>
-                    <!-- <span class="social_nav_link_text">Facebook</span> -->
-                  </a>
-                    <a class="social_nav_link twitter" href="http://www.twitter.com/yale" target="_blank">
-                      <span class="social_nav_link_icon"></span>
-                      <span class="social_nav_link_text">Twitter</span></a>
-                    <a class="social_nav_link youtube" href="http://www.youtube.com/yale" target="_blank">
-                      <span class="social_nav_link_icon"></span>
-                      <span class="social_nav_link_text">YouTube</span></a>
-                    <a class="social_nav_link weibo" href="http://weibo.com/yaleuniversity" target="_blank">
-                      <span class="social_nav_link_icon"></span>
-                      <span class="social_nav_link_text">Sina Weibo</span></a>
-                </div>
-              </nav>
-              <!-- END: Social Nav -->
-              <a class="social_all_link button_text button_icon_right_arrow" href="/social-media">All Social Media</a>
-            </div>
-          </div>
-          <!-- END: Social Properties -->
 
         </div>
         <!-- END: Footer Cell -->

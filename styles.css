@@ -522,6 +522,7 @@ header nav.main .main_nav_item {
     padding-right: 200px;
     padding-left: 200px;
     padding-top: 50px;
+    font-size: 1.2rem;
 }
 
 .footer a {
@@ -529,6 +530,31 @@ header nav.main .main_nav_item {
     text-decoration: none;
     margin-bottom: 1rem;
 }
+
+.footer_nav_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.footer-image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 1rem;
+    height: 250px;
+    background-image: url("images/dan-nov1.jpg");
+    background-position: center;
+    background-size: cover;
+    text-shadow: 2px 2px 4px #000000;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+/* .footer-image img {
+    height: 250px;
+    width: 250px;
+} */
 
 .footer_nav_label {
     color: var(--secondary-color);
@@ -541,13 +567,8 @@ header nav.main .main_nav_item {
 .footer_nav_list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     gap: 2rem;
     margin-bottom: 2rem;
-}
-
-.footer-image img {
-    height:250px;
 }
 
 .group-1 {
@@ -575,8 +596,14 @@ header nav.main .main_nav_item {
     padding-bottom: 2rem;
 }
 
+.fa-brands {
+    margin-left: 1rem;
+}
+
 .footer_legal {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 1.2rem;
+
 }
 .footer_legal_copy, .footer_legal_rights, .dot {
     color: var(--grey-color);
@@ -586,5 +613,29 @@ header nav.main .main_nav_item {
 .region-footer-social {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
+.social nav  {
+    margin-right: 1rem;
+}
+
+.ASM{
+    font-family: "Arial";
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.ASM a {
+    margin-right: .5rem;
+    font-size: 1rem;
+}
+
+
