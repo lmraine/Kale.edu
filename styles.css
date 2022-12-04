@@ -306,15 +306,24 @@ header nav.main .main_nav_item {
 }
 
 #refresh {
-    /* font-size: .9rem; */
     margin-right: 10px;
-    transition: 2s linear;
 }
 
 .item-btn-blue:hover #refresh {
-    -webkit-transform: rotateZ(720deg);
-      -moz-transform: rotateZ(720deg);
-      transform: rotateZ(720deg);
+      animation-name: rotate;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+
 }
 
 #horizontal-rule {
@@ -347,6 +356,7 @@ header nav.main .main_nav_item {
     text-shadow: 2px 2px 4px #000000;
 
 }
+
 .g-4 {
     grid-column: 1/2;
     grid-row: 3/4;
@@ -372,7 +382,8 @@ header nav.main .main_nav_item {
     grid-row: 3/4;
     background-color: #bd5319;
     opacity: .6;
-}   
+}
+
 .g-6 {
     grid-column: 1/4;
     grid-row: 4/6;
@@ -386,8 +397,7 @@ header nav.main .main_nav_item {
     grid-column: 1/4;
     grid-row: 4/6;
     background-color: var(--dark-gray);
-    opacity: .6;
-    
+    opacity: .6; 
 } 
 
 .g-7 { 
@@ -544,20 +554,42 @@ header nav.main .main_nav_item {
     align-items: flex-end;
     gap: 1rem;
     height: 250px;
-    background-image: url("images/dan-nov1.jpg");
+    background-image: url("images/pexels-eva-bronzini-5758073.jpg");
     background-position: center;
     background-size: cover;
-    text-shadow: 2px 2px 4px #000000;
     padding-right: 20px;
-    padding-bottom: 10px;
+    font-family: "Arial";
+    background-color: rgba(0, 0, 0, 0.3);
 }
-/* .footer-image img {
+
+#koi {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.footer-image i {
+   margin-right: 10px;
+}
+
+.footer-image:hover {
+    transition: opacity .25s;
+}
+
+/* .footer-image-overlay {
+    background-color: red;
     height: 250px;
-    width: 250px;
+    width: 100px;
+    top: 40%;
+    left: 50%;
+    position:relative;
+    z-index:2;
 } */
+
 
 .footer_nav_label {
     color: var(--secondary-color);
+    font-family: "Arial";
+    font-size: 1rem;
+    text-transform: uppercase;
 }
 
 #h-line {
@@ -636,6 +668,9 @@ header nav.main .main_nav_item {
 .ASM a {
     margin-right: .5rem;
     font-size: 1rem;
+    text-transform: uppercase;
 }
 
-
+.ASM:hover {
+    opacity: .6;
+}
